@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/*html { 
+    scroll-behavior: smooth;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"itim", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color:black;
+}
+p , li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align:justify;
+}
+
+p ,span, label, input, textarea, li {
+    color:black;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+.main-container {
+    width: 90%;
+}
+}
+
+/*button*/
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-family: "itim";
+    font-size:16px;
+}
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.btn-submit{
+    padding: 0.6rem 1rem;
+    font-family: "itim", sans-serif;
+    font-size: 18;
+    cursor: pointer;
+}
+.section-title {
+    margin: 1rem 0 2rem;
+    font: 4rem;
+}
+.pre-title {
+    margin-top: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: gainsboro;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;    
+}
+
+/*Layout*/
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+
+/*logo nav menu*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.logo a {
+    color: black;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: black;
+}
+
+/*burger*/
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display:none;
+    z-index:99;
+    position: fixed;
+    top : 33px;
+    right: 35px;
+}
+
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+    color: palevioletred;
+}
+
+.hero-right img {
+    width: 95%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+#Tools {
+    padding: 4rem 0;
+}
+
+.tools {
+    height: 100px;
+    width: auto-fit;
+    padding-left: 3rem 2rem;
+    border-radius: 3rem;
+}
+
+.margin-img {
+    text-align: center;
+    padding:1rem;
+    margin-bottom: 13rem;
+    height: 100px;
+    margin: 30px;
+}
+
+#Portofolios {
+    padding: 2rem 0;
+}
+
+.portofolio {
+    padding: auto;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    border: 1px solid ghostwhite;
+   }
+
+
+
+.portofolio-cover {
+    height: 250px;
+}
+
+.portofolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.portofolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portofolio-title {
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    gap: 1rem;
+}
+ 
+.portofolio .pre-title {
+    margin: 0 auto;
+}
+.portofolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.portofolio-title a svg:hover {
+    fill:purple;
+}
+
+.portofolio-title a svg {
+    transition:0.2s ease-in-out;
+}
+
+.portofolio-tags {
+    display: flex;
+    gap: 1rem 0;
+}
+
+.portofolio-tags div {
+    font-size: 0.9rem;
+    border: 1px solid ghostwhite;
+    padding: 0.4rem 1rem;
+    color: gray;
+}
+
+
+#Skills {
+    padding: 5rem 0;
+    margin-bottom: 4rem;
+    background: white;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+
+.education {
+    display: flex;
+    gap :2rem;
+}
+
+.education .line {
+    padding: 0 .7rem;
+}
+
+.education .line div {
+    width: 2px;
+    height: 100%;
+    background: gainsboro;
+    position: relative;
+}
+
+.education-info p {
+    margin: 0.6rem 0 1.4rem;
+}
+
+.education-years {
+    margin-bottom: 3rem;
+}
+
+/*the dot on the line*/
+.education .line div:before {
+    content:"";
+    width: 15px;
+    height: 15px;
+    background: gainsboro;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.skill-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+/*contact section*/
+#Contact {
+    padding: 3rem 0;
+    margin-bottom: 4rem;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap : 2rem;
+}
+
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "itim", sans-serif;
+    background: whitesmoke;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color:gray;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline:none;
+    border:1px solid gray;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-item-icon {
+    width: 53px;
+    height: 53px;
+    background:ghostwhite;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.contact-item-detail h4 {
+    margin-bottom:0.6rem;
+}
+
+/*Footer*/
+footer {
+    padding: 1rem;
+    background:ghostwhite;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 0.5rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons svg {
+    fill:gray;
+}
+
+.footer-icons a:hover svg {
+    fill: black;
+}
+
+.spc {
+    padding: 13rem;
+}
+
+.spc2 {
+    padding: 9rem;
+}
+
+
+
+
