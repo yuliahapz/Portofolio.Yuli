@@ -165,11 +165,12 @@ nav ul li a {
 }
 
 .hero-name span {
-    color: palevioletred;
+    /* color: palevioletred; */
+    color: rgba(130, 59, 244, 0.886)
 }
 
 .hero-right img {
-    width: 95%;
+    width: 90%;
 }
 
 .hero-right {
@@ -407,6 +408,28 @@ footer {
     padding: 9rem;
 }
 
+.bulleted-list {
+    list-style-type: disc; /* Menambahkan bullet point */
+    padding-left: 40px; /* Jarak di sebelah kiri */
+    margin: 0; /* Menghapus margin default */
+}
 
+.bulleted-list li {
+    margin-bottom: 10px; /* Jarak antar item daftar */
+    font-size: 14px;
+}
 
+.bulleted-list a {
+    text-decoration: none; /* Menghapus garis bawah dari tautan */
+    color: #37424f; /* Warna teks tautan, bisa disesuaikan */
+}
 
+.bulleted-list a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.link-projects-title {
+    font-weight: bold; /* Memberikan penekanan pada judul */
+    margin-bottom: 10px; /* Jarak antara judul dan daftar */
+    list-style-type: none; /* Menghilangkan bullet point di sebelah kiri */
+}
